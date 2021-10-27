@@ -29,7 +29,7 @@ $ export TERM=xterm-256color
 $ stty rows <num> columns <cols>
 ```
 
-# Method 2: Using socat
+### Using socat
 
 [socat](http://www.dest-unreach.org/socat/doc/socat.html) is like netcat on steroids and is a very powerfull networking swiss-army knife. Socat can be used to pass full TTY’s over TCP connections.
 
