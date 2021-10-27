@@ -1,2 +1,2 @@
 ### Reverse shell generator
-[https://www.revshells.com/]
+https://www.revshells.com/
