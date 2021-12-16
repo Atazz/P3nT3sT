@@ -1,5 +1,6 @@
 # PowerShell
-## Base64 encoded
+## Base64 encoder
+
 [Raiku base64 encoding](https://raikia.com/tool-powershell-encoder/)
 
 This will encode the command you input into valid PowerShell Base64 for use with “EncodedCommand”.
