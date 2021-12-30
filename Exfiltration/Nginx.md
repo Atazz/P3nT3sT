@@ -67,7 +67,7 @@ sudo rm /etc/nginx/sites-enabled/default
 ````
 
 8. Restart Nginx like in point 5
-`````bash  
+````bash  
 sudo systemctl restart nginx.service
 ````
 
