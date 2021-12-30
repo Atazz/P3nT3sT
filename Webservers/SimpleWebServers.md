@@ -191,7 +191,7 @@ The first line doesn’t contain this, so we can manually prepend **echo "** to 
 Find:\r
 Replace:" >> nc.txt\r
 ````
-[netcat](https://academy.hackthebox.com/storage/modules/24/find_replace2.png)
+![netcat](https://academy.hackthebox.com/storage/modules/24/find_replace2.png)
 
 If the last line has an **echo "** on its own, remove it.
 
