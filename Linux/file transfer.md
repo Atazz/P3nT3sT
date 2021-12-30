@@ -1,5 +1,16 @@
 # Linux File Transfer Methods
 
+## SCP
+
+### Download file via SCP from a remote server
+````bash
+scp <user>@<IP-ADDRESS>:/path/to/file <output_file_on_system>
+````
+### Upload file via SCP to a remote system
+````bash
+scp <local_file_on_system> <user>@<IP-ADDRESS>:/path/for/uploaded_file
+````
+
 ## Wget / cURL
 
 Wget and cURL are installed on many Linux distributions and support uploading as well as downloading files.
