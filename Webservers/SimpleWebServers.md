@@ -142,7 +142,7 @@ rdesktop 10.10.10.132 -r disk:linux='/home/user/rdesktop/files'
 ````
 Alternatively, from Windows, the native mstsc.exe remote desktop client can be used.
 
-[windows](https://academy.hackthebox.com/storage/modules/24/rdp.png)
+![windows](https://academy.hackthebox.com/storage/modules/24/rdp.png)
 
 After selecting the drive, we can interact with it in the remote session as follows:
 
@@ -183,7 +183,7 @@ Find:\n
 Replace:echo "
 ````
 
-[echo](https://academy.hackthebox.com/storage/modules/24/find-replace.png)
+![echo](https://academy.hackthebox.com/storage/modules/24/find-replace.png)
 
 The first line doesn’t contain this, so we can manually prepend **echo "** to the first line. Next, we replace **\r** with **" >> nc.txt\r**.
 
