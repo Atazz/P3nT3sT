@@ -36,10 +36,12 @@ server {
 ````bash 
 sudo ln -s /etc/nginx/sites-available/upload.conf /etc/nginx/sites-enabled/
 ````
+
 5. Start nginx.
 `````bash  
 sudo systemctl restart nginx.service
 ````
+
 6. If we get any error messages, be sure to check /var/log/nginx/error.log. If using Pwnbox, we will see port 80 is already in use.
 ````bash
 tail -2 `/var/log/nginx/error.log`
