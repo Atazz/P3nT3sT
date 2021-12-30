@@ -9,7 +9,7 @@ sudo apt install nginx
 After installing it, you already have everything you need.
 
 You can point your browser to your server IP address (http://localhost) or w/e IP-address you have. You should see this page:
-[NGINX-Server](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/7504d83a9fe8c09d861b2f7c49e144ac773f0c0d.png)
+![NGINX-Server](https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/original/2X/7/7504d83a9fe8c09d861b2f7c49e144ac773f0c0d.png)
 
 ## Setting up POST method
 
