@@ -14,4 +14,9 @@ net group <Group_Name> <username> /add
 ````powershell
 net localgroup <Group_Name> <username> /add
 ````
+## Add to Remote Management group
+Remote Management Users group is to allow users to remotely manage computers with Server Manager and RSAT - PSremoting or WinRM
+````powershell
+net localgroup "Remote Management Users" <username> /add
+````
 
