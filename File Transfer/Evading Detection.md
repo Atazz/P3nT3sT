@@ -42,8 +42,11 @@ Connection: Keep-Alive
 ````
 
 ## LOLBAS / GTFOBins
+
 [LOLBAS](https://lolbas-project.github.io/)
+
 [GTFOBins](https://gtfobins.github.io/)
+
 Application whitelisting may prevent you from using PowerShell or Netcat, and command-line logging may alert defenders to your presence. In this case, an option may be to use a "LOLBIN" (living off the land binary), alternatively also known as "misplaced trust binaries." An example LOLBIN is the Intel Graphics Driver for Windows 10 (GfxDownloadWrapper.exe), installed on some systems, and contains functionality to download configuration files periodically. This download functionality can be invoked as follows:
 
 ````powershell  
