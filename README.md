@@ -5,7 +5,7 @@ Happy Hacking 🦖 https://www.ired.team/offensive-security-experiments/offensiv
 https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques
 
 ---
-description: >-
+## description:
   Convenient commands for your pentesting / red-teaming engagements, OSCP and
   CTFs.
 ---
