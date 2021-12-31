@@ -6,13 +6,17 @@ ldapsearch -h <IP-ADDRESS> -p 389 -x -b "dc=<DOMAIN>,dc=<DOMAIN>"
 ## windapsearch
 First git clone from this repository: (https://github.com/ropnop/windapsearch)
 
+### Installation
 windapsearch requires the python-ldap module. You should be able to get up and running with two commands:
 ````bash
 git clone https://github.com/ropnop/windapsearch.git
 python3 -m pip install -r requirements.txt #or pip install python-ldap #or apt-get install python-ldap or 
-./windapsearch.py
 ````
 
+### Usage of Windapsearch
+````bash
+./windapsearch.py -d <domain> --dc-ip <IP-ADDRESS-DC -U
+````
 The latest version is designed to be used with Python 3, but if you are stuck with Python 2, you can use the windapsearch_py2.py script.
 
 ## Specifying Domain and Account
