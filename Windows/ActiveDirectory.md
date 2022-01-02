@@ -19,4 +19,7 @@ Remote Management Users group is to allow users to remotely manage computers wit
 ````powershell
 net localgroup "Remote Management Users" <username> /add
 ````
-
+## GetUserSPNs
+````bash
+impacket-GetUserSPNs <domain>/<username> -dc-ip <DC-IP>
+````
