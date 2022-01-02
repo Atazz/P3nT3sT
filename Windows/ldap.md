@@ -1,7 +1,18 @@
 # LDAP
 ## ldapsearch
+### Print out all data from server with ldap
 ````bash
 ldapsearch -h <IP-ADDRESS> -p 389 -x -b "dc=<DOMAIN>,dc=<DOMAIN>"
+````
+### Identification of configured SPNs and extraction of hash
+Kerberos authentication uses Service Principal Names (SPNs) to identify the account associated
+with a particular service instance. ldapsearch can be used to identify accounts that are
+configured with SPNs.
+````bash
+ldapsearch -x -h 10.10.10.100 -p 389 -D 'SVC_TGS' -w
+'GPPstillStandingStrong2k18' -b "dc=active,dc=htb" -s sub
+"(&(objectCategory=person)(objectClass=user)(!(useraccountcontrol:1.2.840.1
+13556.1.4.803:=2))(serviceprincipalname=*/*))"
 ````
 ## windapsearch
 First git clone from this repository: (https://github.com/ropnop/windapsearch)
