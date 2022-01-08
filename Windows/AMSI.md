@@ -4,6 +4,8 @@
 Link to resource (https://amsi.fail/)
 AMSI.fail generates obfuscated PowerShell snippets that break or disable AMSI for the current process. The snippets are randomly selected from a small pool of techniques/variations before being obfuscated. Every snippet is obfuscated at runtime/request so that no generated output share the same signatures.
 
+![[Pasted image 20220108215009.png]]
+
 
 ### What is AMSI?
 As f-secure explained in one of their excellent blog-posts:
