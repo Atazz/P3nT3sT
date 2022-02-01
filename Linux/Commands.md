@@ -13,3 +13,12 @@ There are also a few flags you can add to the command to have it perform slightl
 -x: Extract
 -z: Uses gzip, omit this if you just have a .tar
 -f: specifies file input, rather than STDIN
+
+## Bash Specielt Characters
+
+Data between '' or $() will be evaluated before the whole statement and will become part of this statement
+
+```bash
+file `ls /etc/*.conf`
+```
+
