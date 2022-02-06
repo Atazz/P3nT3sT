@@ -35,7 +35,7 @@ PS C:\htb> Add-WindowsFeature Web-Server, Web-Mgmt-Tools
 
 SMB is a good option for file transfers, as on Windows as you don’t need to install anything. SMB traffic features prominently on networks, and SMB file transfers to Windows computers are expected. Unfortunately, it’s also the case that outbound SMB traffic is often allowed through the external firewall. In case SMB traffic through the firewall has been restricted, WebDAV may be a good option, as it relies on HTTP as a transport protocol. Some common tools that support file transfers from SMB and WebDAV shares are reviewed below.
 
-See [[smb.md]]
+See [[Webservers/smb]]
 
 ## PowerShell
 ### Copy-Item
