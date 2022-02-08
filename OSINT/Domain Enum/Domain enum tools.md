@@ -2,4 +2,3 @@
 
 ![[Pasted image 20220208095336.png]]
 
-apt 
