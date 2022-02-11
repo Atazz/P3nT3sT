@@ -78,11 +78,7 @@ select * from users where user_id = 1 union select 1,2,3,4,5,sleep(1);
 ```
 
 ![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/Screenshot%20from%202018-11-17%2015-53-52.png)
-
-```
-```
-
-## XSS
+## XSS 
 
 ![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/Peek%202018-11-17%2020-17.gif)
 
