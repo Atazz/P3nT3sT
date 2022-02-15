@@ -13,4 +13,4 @@ Ask if they read the report.
 
 Do you have questions before we begin. 
 
-If they cant fulfill the recommondation, hten 
+If they cant fulfill the recommondation, hten recommend lower security.
