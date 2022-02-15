@@ -8,3 +8,7 @@ Sometime write more recommendation if the recommendation is not appliable to the
 
 
 Assumptions
+
+Ask if they read the report.
+
+Do you have questions before we begin. 
