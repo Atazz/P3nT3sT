@@ -1,6 +1,11 @@
 
 # Example of use for dir scanners
 
+## Wordlists to use
+1. /usr/share/SecLists/Discovery/Web-Content/dirsearch.txt
+2. /usr/share/SecLists/Discovery/Web-Content/common.txt
+3. /usr/share/SecLists/Discovery/Web-Content/raft-medium-files.txt
+
 ## Simple discovery on PHP applications
 
 The main use of these tools is file discovery on a common web server, such as a PHP website running on an apache2. Searching for files on this kind of web server often leads to HTTP errors such as 404 - File not found, 403 - Forbidden or HTTP success such as 200 - OK. Other HTTP status codes may be encountered, like 302 - Found, 429 - Too Many Requests, 500 - Internal Server Error...
@@ -26,11 +31,6 @@ wfuzz --hc 404 -w /usr/share/wordlists/raft-large-words.txt -w exts.txt http://l
 
 
 
-```bash
-dirsearch -u http://localhost/ --exclude-texts="Page not found" -e php,php5,sql -w /usr/share/wordlists/raft-large-words.txt -f
-ffuf -u http://localhost/FUZZ -fr "Page not found" -w /usr/share/wordlists/raft-large-words.txt -e php,php5,sql
-wfuzz --hs "Page not found" --hc 404 -w /usr/share/wordlists/raft-large-words.txt -w exts.txt http://localhost/FUZZFUZ2Z
-```
 
 ## Webserver with a custom page for error 40X
 Sometimes, server won't reply as expected for your tools and will reply a 403 error instead of a 404 error, or worst a 200 status code with a custom error page.
@@ -46,3 +46,9 @@ wfuzz --hc 404,403 -w /usr/share/wordlists/raft-large-words.txt -w exts.txt http
 ```
 
 i.e., if a website returns a 200 HTTP status code with an HTML page containing the sentence Page not found, you may filter with the following :
+
+```bash
+dirsearch -u http://localhost/ --exclude-texts="Page not found" -e php,php5,sql -w /usr/share/wordlists/raft-large-words.txt -f
+ffuf -u http://localhost/FUZZ -fr "Page not found" -w /usr/share/wordlists/raft-large-words.txt -e php,php5,sql
+wfuzz --hs "Page not found" --hc 404 -w /usr/share/wordlists/raft-large-words.txt -w exts.txt http://localhost/FUZZFUZ2Z
+```
