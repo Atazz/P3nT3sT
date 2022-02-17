@@ -28,6 +28,12 @@ http://<website>/vulnpage.php?countryID=999999 or "1"="2"
 //<someNode>[username='' and password='' or "1"="1"]
 ```
 
+### Finding Root Node Identifier
+
+```bash
+' or substring(name(/*[*))'
+```
+
 # Enumerate Blind Bolean injections with xcat
 You can see here how to use xcat (Tool for injection auto blind bolean to extract) 
 
