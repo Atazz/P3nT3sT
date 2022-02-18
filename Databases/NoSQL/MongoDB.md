@@ -11,6 +11,9 @@ MongoDB's config file - mongodb.conf / mongod.conf
 Metasploit scanner module: use auxiliary/scanner/mongodb/mongodb_login
 Imported metasploit module: https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/mongodb-security-weaknesses-in-a-typical-nosql-database/
 
+https://github.com/mongodb-labs/sleepy.mongoose
+
+
 ## Default Open Ports MongoDB
 ```ports
 27017
