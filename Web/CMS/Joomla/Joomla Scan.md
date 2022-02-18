@@ -25,20 +25,8 @@ optional arguments:
     -v, --version           show program's version number and exit
 ``````
 # Screenshot
-
-![alt Screenshot 0.4b](http://cloud.draghetti.it/Rehost_Image/Joomla_Scan_0.4b.png)
-
+![[Pasted image 20220218030339.png]]
 # Requirements
 * Python
 * beautifulsoup4 (To install this library from terminal type: $ sudo easy_install beautifulsoup4 or $ sudo pip install beautifulsoup4)
 
-# Changelog
-
-* 2016.12.12 0.5beta > Implementation of the Multi Thread, Updated database from 656 to 686 components, Fix Cosmetics and Minor Fix.
-* 2016.05.20 0.4beta > Find README.md, Find Manifes.xml, Find Index file of Components (Only if descriptive), User Agent and TimeOut on Python Request, Updated database from 587 to 656 components, Fix Cosmetics and Minor Fix.
-* 2016.03.18 0.3beta > Find index file on components directory
-* 2016.03.14 0.2beta > Find administrator components and file Readme, Changelog, License.
-* 2016.02.12 0.1beta > Initial release
-
-# License
-GNU, version 3

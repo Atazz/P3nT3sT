@@ -9,3 +9,9 @@ curl -s http://<target-joomla>/administrator/manifests/files/joomla.xml | grep "
 ```bash
 curl -sSL -D - http://<target-joomla>/index.php -o /dev/null | grep "X-Powered-By"
 ```
+
+## Joomla Extensions
+```bash
+searchsploit "Joomla" | grep "com_" | cit -f3 -d" " >> comptotestdb.txt
+
+```
