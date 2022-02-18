@@ -1,4 +1,7 @@
 ## Fundamentals
+
+https://justi.cz/security/2017/11/14/couchdb-rce-npm.html
+
 ### Default Open Ports
 ```
 5984
