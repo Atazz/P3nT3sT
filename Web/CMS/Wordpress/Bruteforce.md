@@ -15,3 +15,9 @@ wpscan --url http://<target-wp> --wordlist /usr/share/wordlist/rockyou.txt --use
 ## You can leave out --username. Then it will first enumerate all usernames and then begin bruteforce
 wpscan --url http://<target-wp> --wordlist /usr/share/wordlist/rockyou.txt
 ```
+
+WPForce
+link: https://github.com/n00py/WPForce
+```bash
+python wpforce.py -i users.txt -w /usr/share/wordlists/rockyou.txt -u http://<target-wp>
+```
