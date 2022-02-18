@@ -19,7 +19,7 @@ $ ./beef
 ![[Pasted image 20220218034310.png]]
 Documentation
 ---
-
+* [Wiki](https://github.com/beefproject/beef/wiki)
 * [User Guide](https://github.com/beefproject/beef/wiki#user-guide)
 * [Frequently Asked Questions](https://github.com/beefproject/beef/wiki/FAQ)
 * [JSdocs](https://beefproject.github.io/beef/index.html)
