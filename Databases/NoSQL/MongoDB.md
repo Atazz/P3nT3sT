@@ -7,6 +7,14 @@
 
 MongoDB's config file - mongodb.conf / mongod.conf
 
+## SQL injection
+If bob is there you can use this to print all the other enties in the database
+
+```
+http://demo1.ine.local/?name[$ne]=bob
+
+```
+
 ## MongoDB penetration testing tools
 Metasploit scanner module: use auxiliary/scanner/mongodb/mongodb_login
 Imported metasploit module: https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/mongodb-security-weaknesses-in-a-typical-nosql-database/
