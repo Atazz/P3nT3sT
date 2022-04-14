@@ -31,3 +31,9 @@ The above suggests that if we can drop our binary to `c:\program.exe`, we may be
 Let's try exploiting the weakness in by droping a meterpreter binary to c:\program.exe and starting the vulnerable service `VulnerableSvc`. Doing so gives us a meterpreter session with `nt authority\system` privileges:
 
 ![](<https://2603957456-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LFEMnER3fywgFHoroYn%2F-LfM9GD5Ts95nbRdGxgB%2F-LfM9tBY9rwoQiyK9pjg%2Fvulnservice.gif?alt=media&token=7ceb6260-1661-4637-be72-89de8825f959>)
+
+# Trusted Service Path (Metasploit)
+
+```
+exploit/windows/local/trusted_service_path
+```
